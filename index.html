@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js Glitter Effect Example</title>
+    <style>
+        body { 
+            margin: 0; 
+            overflow: hidden;
+            background: #333; 
+        }
+        #layout {
+            width: 100vw; height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #container { 
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="layout">
+        <div id="container"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+        // Call the loadShinyPNG function
+        window.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('container');
+            const imagePath = '/img/planet.png'; // Replace with your image path
+            const glitterPath = '/img/glitter.png'; // Replace with your glitter texture path
+
+            window.loadShinyPNG(container, imagePath, glitterPath);
+        });
+    </script>
+</body>
+</html>
