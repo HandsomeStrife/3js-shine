@@ -1,6 +1,8 @@
 ## Shine PoC
 
-This is to share the work done so far
+The object is for a user to be able to upload ANY image/object file, be loaded into threejs (or other 3D rendering library that can be used to display on webpages), and a shine/sparkle filter applied to it.
+
+There could be upwards of 10-20 of these showing on a single page, so the shine/sparkle effect needs to be not _horribly_ computer intensive.
 
 ## Setup
 
